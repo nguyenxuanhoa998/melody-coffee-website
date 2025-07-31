@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d2c1b0;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.shop-title {
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive; 
+    text-decoration: none;
+    color: #000000;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #965f41;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #965f41;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b8855c;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container ul li {
+    padding: 10px 20px;
+    background-color: #b8855c;
+    border-radius: 5px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-container ul li a:hover {
+    color: #37251b;
+}
+
+.main-content {
+    background-image: url('https://i.pinimg.com/564x/5a/96/e2/5a96e20176bf41ab5f7a763184fbf5b0.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    image-rendering: crisp-edges; 
+    padding: 100px;
+    text-align: center;
+    color: white;
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.main-image {
+    width: 50%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%; 
+    text-align: center;
+}
+
+.image-box img {
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #FFD700; 
+    font-size: 1.2em;
+    margin: 5px 0; 
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px; 
+}
+
+.menu-container {
+    text-align: center;
+    padding: 20px;
+}
+.menu-header {
+    background-color: white; 
+    padding: 5px 10px; 
+    color: black; 
+    border-radius: 5px; 
+    text-align: center; 
+    display: inline-block; 
+    margin: 0; 
+}
+
+
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    position: relative;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden; 
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #37251b;
+}
+
+.info {
+    display: none; 
+    color: #965f41; 
+    font-size: 16px; 
+    margin-top: 5px; 
+    transition: opacity 0.3s; 
+}
+
+.menu-item:hover .info {
+    display: block; 
+    opacity: 1; 
+}
+
+.contact-us {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px; /* Điều chỉnh kích thước tối đa */
+}
+
+.contact-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #37251b; /* Màu chữ cho tiêu đề */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    color: #555; /* Màu chữ cho thông tin liên hệ */
+}
+
+.contact-info a {
+    color: #965f41; /* Màu cho liên kết */
+    text-decoration: none; /* Không gạch chân */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các phần tử trong biểu mẫu */
+}
+
+.contact-form label {
+    font-weight: bold; /* In đậm chữ nhãn */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #965f41; 
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #965f41; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #b8855c;
+}
+
+.phone-icon:before {
+    content: "\1F4DE"; 
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+   
+}
+/* Media Queries cho các thiết bị di động và máy tính bảng */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .shop-title {
+        font-size: 24px; 
+    }
+
+    .search-bar {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .search-bar input {
+        width: 100%; 
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start; 
+    }
+
+    .nav-container ul li {
+        width: 100%; 
+    }
+
+    .main-content {
+        padding: 50px 20px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+    .image-container {
+        flex-direction: column; /* Sắp xếp các phần đánh giá theo cột */
+        align-items: center; /* Căn giữa các phần đánh giá */
+        gap: 20px; /* Tạo khoảng cách giữa các phần đánh giá */
+    }
+
+    .image-box {
+        width: 90%; /* Phóng to các phần đánh giá cho dễ đọc */
+        padding: 15px; /* Tăng khoảng padding */
+        font-size: 1.1em; /* Phóng to nội dung bên trong */
+    }
+
+
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .menu-item {
+        padding: 10px; 
+    }
+
+    .contact-us {
+        padding: 20px;
+    }
+
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px; 
+    }
+
+    .contact-form button {
+        font-size: 14px; 
+    }
+}
+
+/* Đối với màn hình nhỏ hơn */
+@media (max-width: 480px) {
+    .shop-title {
+        font-size: 20px; 
+    }
+
+    .header-container {
+        padding: 10px; 
+    }
+
+    .search-bar input {
+        font-size: 14px; 
+    }
+
+    .search-bar button {
+        font-size: 14px; 
+    }
+
+    .stars {
+        font-size: 1em; 
+    }
+
+    .review-text {
+        font-size: 14px; 
+    }
+}
